@@ -1,0 +1,121 @@
+﻿@charset "utf-8"; /* CSS Document */ 
+body, th, td, input { margin:0; padding:0; font-family:"Hiragino Kaku Gothic Pro","微軟正黑體","Microsoft Jhenghei",Helvetica,Arial,sans-serif; font-size:1em; }
+p {color:#666666;}
+#chart_box { width:810px; margin:5px auto; padding:30px; border:solid 3px #9dd127; }
+.chart_box_tit h2 { margin:0 0 20px 0; padding:0; color:#669900; font-size:1.5em; }
+.chart_box_date { margin:0 0 20px 0; padding:0; color:#666666; font-size:0.8em; }
+.chart_box_info { margin:20px auto; }
+
+h2 { color:#669900; font-size:1.5em; /*font-size:24px;*/ }
+h3 { color:#669900; font-size:1.25em; /*font-size:18.72px;*/ }
+h4 { color:#669900; }
+
+
+
+.chartbox_r {
+    width: 10px;
+    min-width: 100%;
+    position: relative;
+}
+
+.chartbox {
+    position:relative;
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0px auto;
+    font-family: 'Arial', 'Microsoft JhengHei';
+}
+
+.chartdiv {
+}
+
+
+.charttitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.chartsubtitle {
+    font-size: 15px;
+}
+
+.chartnote {
+    font-size: 13px;
+    color: #666666;
+    line-height: 26px;
+}
+.chartnote ul {
+    padding-left:0px;
+    margin-left: 16px;
+    list-style-type:decimal;
+}
+
+.chartnote ol
+{
+        margin: 0 auto;
+        margin-left: 13px;   
+	list-style-position: outside;
+	text-align: justify;
+	text-justify: inter-ideograph;
+        padding-inline-start: 13px;
+}
+
+.charttip {
+    font-size: 16px;
+    font-family: 'Microsoft JhengHei';
+    color: #dc3912;
+}
+
+
+/*=========================下載連結===========================*/
+.download_list {
+    padding: 10px 0;
+    margin: 15px 0;
+}
+
+    .download_list ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .download_list ul li {
+            margin: 0 !important;
+            padding: 0 !important;
+            list-style: none;
+            background: none !important;
+        }
+
+            .download_list ul li span {
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+                color: #333;
+            }
+
+            .download_list ul li a {
+                display: block;
+                padding: 8px 10px 8px 40px;
+                font-size: 14px;
+                line-height: 20px;
+                background: url(../images/icon_newsdownload.png) no-repeat 12px 10px;
+                color: #757575;
+                text-decoration:none;
+            }
+
+                .download_list ul li a:hover {
+                    background: #fefefe url(../images/icon_newsdownload_.png) no-repeat 12px 10px;
+                    color: #88bc13;
+                }
+
+
+/* ======================= 回上層按鈕 ======================= */
+#goback {/* clear:both; */margin:20px 0 0 0;padding:20px 0px 0px 0px;border-top:solid 1px #ededed;}
+#goback ul { display:block; margin:0; padding:0; text-align:right;/*用文字方向可控制按鈕位置*/ }
+#goback ul li { display:inline-block; margin:0 0 10px 5px; padding:0; list-style:none; font-size:13px; line-height:24px; }
+#goback ul li a { display:block; padding:2px 10px; background:#eee; color:#333; border:solid 1px #ededed; text-decoration:none;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+-ms-border-radius:3px;
+-o-border-radius:3px;
+border-radius:3px; }
+#goback ul li a:hover { background:#aaa; color:#fff; border:solid 1px #999; }
