@@ -1,67 +1,93 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>台灣發電量地圖</title>
+    <title>微積分教學一站式網站</title>
     <style>
-        /* 基本地圖樣式 */
-        #taiwan-map {
-            position: relative;
-            width: 600px;
-            height: 800px;
-            background: url('https://example.com/taiwan-map.png') no-repeat center center;
-            background-size: contain;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .city {
-            position: absolute;
-            padding: 5px;
-            cursor: pointer;
+        header, footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
         }
-        #info-box {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             padding: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            border-radius: 5px;
-            display: none;
+            background-color: #cccccc;
+        }
+        nav a {
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #003366;
         }
     </style>
 </head>
 <body>
 
-<div id="taiwan-map">
-    <!-- 各城市的熱點 -->
-    <div class="city" id="taipei" style="top: 50px; left: 150px;" data-power="核能、燃氣、風力">台北</div>
-    <div class="city" id="kaohsiung" style="top: 600px; left: 180px;" data-power="燃煤、燃氣">高雄</div>
-    <div class="city" id="taichung" style="top: 400px; left: 160px;" data-power="燃煤、太陽能">台中</div>
-    <!-- 添加更多縣市熱點 -->
-</div>
+<header>
+    <h1>微積分教學一站式網站</h1>
+    <p>提供微積分的入門課程、資源以及教學影片</p>
+</header>
 
-<div id="info-box"></div>
+<nav>
+    <a href="#home">首頁</a>
+    <a href="#courses">課程介紹</a>
+    <a href="#resources">推薦資源</a>
+    <a href="#contact">聯絡方式</a>
+</nav>
 
-<script>
-    const infoBox = document.getElementById('info-box');
-    const cities = document.querySelectorAll('.city');
+<main>
+    <section id="home">
+        <h2>首頁</h2>
+        <p>歡迎來到微積分教學一站式網站。我們提供豐富的學習資源，讓您能夠快速理解微積分的基本概念和應用。</p>
+    </section>
 
-    // 當游標移動到城市時顯示發電來源
-    cities.forEach(city => {
-        city.addEventListener('mouseenter', () => {
-            const powerSource = city.getAttribute('data-power');
-            infoBox.textContent = `${city.textContent}的電力來源：${powerSource}`;
-            infoBox.style.display = 'block';
-        });
-        city.addEventListener('mousemove', (e) => {
-            infoBox.style.left = e.pageX + 15 + 'px';
-            infoBox.style.top = e.pageY + 15 + 'px';
-        });
-        city.addEventListener('mouseleave', () => {
-            infoBox.style.display = 'none';
-        });
-    });
-</script>
+    <section id="courses">
+        <h2>課程介紹</h2>
+        <ul>
+            <li>基礎微積分課程</li>
+            <li>進階微積分應用</li>
+            <li>工程數學與微積分的關聯</li>
+        </ul>
+        <p>我們的課程涵蓋了微積分的理論和實際應用，適合各種程度的學習者。</p>
+    </section>
+
+    <section id="resources">
+        <h2>推薦資源</h2>
+        <ul>
+            <li><a href="https://softnshare.com/learn-calculas-university-open-course-taiwan/" target="_blank">台灣各大學的微積分開放式課程</a></li>
+            <li><a href="https://ocw.aca.ntu.edu.tw/ntu-ocw/ocw/cou/100S111" target="_blank">臺大微積分開放式課程</a></li>
+            <li><a href="https://www.slideshare.net/slideshow/ss-57088188/57088188" target="_blank">微積分與工程數學應用</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>聯絡方式</h2>
+        <p>若有任何問題，請寄信至：<a href="mailto:contact@example.com">contact@example.com</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 微積分教學一站式網站 | Powered by Enthusiasm for Learning</p>
+</footer>
 
 </body>
 </html>
+
